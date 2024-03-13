@@ -19,3 +19,9 @@
 
 # Go workspace file
 go.work
+
+# Customize
+markdown
+storage
+config.yml
+.idea
