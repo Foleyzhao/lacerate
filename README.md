@@ -49,8 +49,8 @@
 💻  支持多客户端: **𝖶𝗂𝗇𝖽𝗈𝗐𝗌** / **𝖬𝖺𝖼𝖮𝖲** / **Linux**
 
 ## 教程
-[配置文件说明](../doc/配置文件说明.md) | 
-[博客编写指南](../doc/博客编写指南.md)
+[配置文件说明](https://github.com/Foleyzhao/lacerate/blob/main/doc/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E.md) | 
+[博客编写指南](https://github.com/Foleyzhao/lacerate/blob/main/doc/%E5%8D%9A%E5%AE%A2%E7%BC%96%E5%86%99%E6%8C%87%E5%8D%97.md)
 
 ### 快速启动
 
@@ -120,4 +120,4 @@ lacerate run [port]
 </div>
 
 ## License
-[Apache-2.0](https://github.com/Foleyzhao/lacerate/LICENSE). Copyright (c) 2024 Lacerate
+[Apache-2.0](https://github.com/Foleyzhao/lacerate/blob/main/LICENSE). Copyright (c) 2024 Lacerate
