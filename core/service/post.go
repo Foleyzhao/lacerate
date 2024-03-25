@@ -70,8 +70,7 @@ tagList:
 }
 
 // MarkdownList 获取markdown文件夹下所有文件
-func MarkdownList() (markdownList []string) {
-	markdownDir := config.GlobalConf.Markdown
+func MarkdownList(markdownDir string) (markdownList []string) {
 	_ = filepath.Walk(markdownDir, func(path string, f os.FileInfo, err error) error {
 		if err != nil { //忽略错误
 			return err
@@ -79,9 +78,9 @@ func MarkdownList() (markdownList []string) {
 		if f.IsDir() {
 			return nil
 		}
-		if strings.ToLower(f.Name()) == "readme.md" {
-			return nil
-		}
+		//if strings.ToLower(f.Name()) == "readme.md" {
+		//	return nil
+		//}
 		if f.Name() == "about.md" {
 			return nil
 		}
@@ -97,7 +96,7 @@ func MarkdownList() (markdownList []string) {
 // LoadPostList 加载文章列表
 func LoadPostList() {
 	postList = make([]*model.Post, 0)
-	markdownList := MarkdownList()
+	markdownList := MarkdownList(config.GlobalConf.Markdown)
 	for _, markdown := range markdownList {
 		post, err := loadMarkdownContent(markdown)
 		if err == nil {
